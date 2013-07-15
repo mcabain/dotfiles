@@ -16,14 +16,14 @@
 ## -----------------------------------------------------------------------------------------
 ## -- 1) Set variables and keybindings for emacs compatibility (remapping Ctrl-A to Ctrl-T)
 ## -----------------------------------------------------------------------------------------
-markkeys "h=^B:l=^F:$=^E"             # emacs style keybindings during copy mode movement in screen
+#hahaha, no. -mcab markkeys "h=^B:l=^F:$=^E"             # emacs style keybindings during copy mode movement in screen
 autodetach             on             # default: on
 crlf                  off             # default: off
 #deflogin              off            # default: on
 hardcopy_append       on              # default: off
 startup_message       off             # default: on
 vbell                 off             # default: ???
-escape	"^Tt"                         # ctrl-A default interferes with emacs keybindings for terminal
+#hahaha, no. -mcab escape	"^Tt"                         # ctrl-A default interferes with emacs keybindings for terminal
 defutf8 on                            # unicode by default
 defscrollback         10000           # default: 100
 silencewait           15              # default: 30
@@ -82,10 +82,10 @@ bind 'b' focus bottom
 sorendition "+b kG"   
 
 # 2.2) hardstatus = navigation bar @ bottom
-hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"  
+hardstatus alwayslastline "%C %H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"  
 
 # 2.3) Autoload two screen tabs for emacs/bash.
-screen -t emacs 0
+screen -t edit 0
 screen -t bash 1
 
 # 2.4) Description of the keywords used in hardstatus
